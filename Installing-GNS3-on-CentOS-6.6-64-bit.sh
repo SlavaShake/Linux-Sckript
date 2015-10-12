@@ -107,7 +107,7 @@ rpm -aq | grep openssl
 #
 #             Remove .x86_64 from the filename and append with .i686 as shown below.
 
-sudo yum install openssl-1.0.1e-30.el6.8.i686   
+sudo yum install -y openssl-1.0.1e-30.el6.8.i686   
 
 sudo ln -s /usr/lib/libcrypto.so.10 /usr/lib/libcrypto.so.4
 
@@ -193,7 +193,7 @@ cd gns
 
  make
 
- sudo make install
+ sudo make install 
 
  sudo setcap cap_net_admin,cap_net_raw=ep /usr/local/bin/dynamips
 
@@ -219,7 +219,7 @@ cd gns
 
 #Install VPCS
 
- sudo yum install glibc-static
+ sudo yum install -y glibc-static
 
  git clone  https://github.com/GNS3/vpcs.git
 
@@ -282,4 +282,4 @@ cd gns
 
 # Install wireshark
 
-sudo yum install wireshark-gnome
+sudo yum install -y wireshark-gnome

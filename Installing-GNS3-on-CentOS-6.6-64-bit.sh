@@ -201,7 +201,7 @@ cd gns
  sudo setcap cap_net_admin,cap_net_raw=ep /usr/local/bin/dynamips
 
  cd ..
-cd ..
+ cd ..
 
  
 
@@ -233,7 +233,8 @@ cd ..
 
  sudo cp vpcs /usr/local/bin/
 
- cd ../..
+ cd ..
+ cd ..
 
  
 
@@ -278,7 +279,7 @@ cd ..
 #Or for a x86 arch only install, configure this way, instead.
 #
 # ./configure --target-list="i386-softmmu x86_64-softmmu"
-./configure --target-list="x86_64-softmmu"
+  ./configure --target-list="x86_64-softmmu"
   make
 
   sudo make install

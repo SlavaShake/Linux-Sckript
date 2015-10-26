@@ -213,7 +213,7 @@ cd gns
 
  make
 
- sudo make install
+ make install
 
  sudo cp iouyap /usr/local/bin/
 

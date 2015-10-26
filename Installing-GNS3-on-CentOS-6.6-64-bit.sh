@@ -107,7 +107,7 @@ rpm -aq | grep openssl
 #
 #             Remove .x86_64 from the filename and append with .i686 as shown below.
 
-sudo yum install -y openssl-1.0.1e-30.el6.8.i686   
+sudo yum install -y openssl-1.0.1e-30.el6.8.x86_64  
 
 sudo ln -s /usr/lib/libcrypto.so.10 /usr/lib/libcrypto.so.4
 
@@ -153,6 +153,7 @@ cd gns
 
  git clone https://github.com/GNS3/gns3-server.git
 
+
  cd gns3-server
 
  sudo python3 setup.py install
@@ -164,6 +165,7 @@ cd gns
 #Install the gns3-gui
 
  git clone https://github.com/GNS3/gns3-gui.git
+
 
  cd gns3-gui
 
@@ -183,6 +185,7 @@ cd gns
 
  git clone https://github.com/GNS3/dynamips.git
 
+
  cd dynamips
 
  mkdir build
@@ -197,7 +200,8 @@ cd gns
 
  sudo setcap cap_net_admin,cap_net_raw=ep /usr/local/bin/dynamips
 
- cd../..
+ cd ..
+cd ..
 
  
 
@@ -269,11 +273,12 @@ cd gns
 
  cd qemu-2.3.0
 
- ./configure
+ #./configure
 
 #Or for a x86 arch only install, configure this way, instead.
 #
 # ./configure --target-list="i386-softmmu x86_64-softmmu"
+./configure --target-list="x86_64-softmmu"
   make
 
   sudo make install

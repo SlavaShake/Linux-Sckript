@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-sudo apt-get install gdebi vlc pdfmod ttf-mscorefonts-installer synaptic cmake ubuntu-restricted-extras dconf-tools unity-tweak-tool p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller ubuntu-restricted-extras libavcodec-extra
+sudo apt-get install gdebi vlc pdfmod ttf-mscorefonts-installer synaptic libdvdcss2 cmake ubuntu-restricted-extras dconf-tools unity-tweak-tool p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller ubuntu-restricted-extras libavcodec-extra
 
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo apt-get update
